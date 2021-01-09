@@ -1,0 +1,10 @@
+server:
+  type: default
+  adminContextPath: /admin
+  applicationContextPath: /
+  applicationConnectors:
+    - type: http
+      port: 9910
+  adminConnectors:
+    - type: http
+      port: 9911
