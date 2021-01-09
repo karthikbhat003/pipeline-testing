@@ -80,7 +80,7 @@
                             <manifest>
                                 <addClasspath>true</addClasspath>
                                 <classpathPrefix>lib/</classpathPrefix>
-                                <mainClass>com.company.HelloWorldApplication</mainClass>
+                                <mainClass>com.company.MainApplication</mainClass>
                                 <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
                             </manifest>
                         </archive>
