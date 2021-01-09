@@ -78,6 +78,9 @@
                     <configuration>
                         <archive>
                             <manifest>
+                                <addClasspath>true</addClasspath>
+                                <classpathPrefix>lib/</classpathPrefix>
+                                <mainClass>com.company.HelloWorldApplication</mainClass>
                                 <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
                             </manifest>
                         </archive>
