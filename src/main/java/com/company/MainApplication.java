@@ -14,11 +14,14 @@ public class MainApplication extends Application<TestConfiguration> {
 
     @Override
     public void initialize(Bootstrap<TestConfiguration> bootstrap) {
+        /**
+         * This is required for reading yml from config.
+         */
         bootstrap.setConfigurationSourceProvider(
                 new ResourceConfigurationSourceProvider());
     }
 
-    public void run(TestConfiguration testConfiguration, Environment environment) throws Exception {
+    public void run(TestConfiguration testConfiguration, Environment environment) {
         final TestResource testResource = new TestResource();
         environment.jersey().register(testResource);
     }
