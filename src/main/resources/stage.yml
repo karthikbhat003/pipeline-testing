@@ -8,3 +8,33 @@ server:
   adminConnectors:
     - type: http
       port: 9911
+
+logging:
+  level: INFO
+  loggers:
+    eragon-logger:
+      level: INFO
+      additive: false
+      appenders:
+        - type: file
+          threshold: ALL
+          timeZone: 'Asia/Jakarta'
+          logFormat: "%d [%thread] %-5level %c{15} - $eragon$%msg%n%rEx"
+          currentLogFilename: log/eragon/events.log
+          archivedLogFilenamePattern: log/eragon/events-%d-%i.log.gz
+          archivedFileCount: 10
+  appenders:
+    - type: console
+      threshold: ALL
+      timeZone: 'Asia/Jakarta'
+      logFormat: "[%date{dd/MMM/yyyy:HH:mm:ss +SSSS}] %c{15} [%thread] %-5level [%X{X-Transaction-Id} - %X{X-Request-Id}] - %msg%n%rEx"
+    - type: file
+      timeZone: 'Asia/Jakarta'
+      threshold: ALL
+      archive: true
+      currentLogFilename: log/main/current
+      archivedLogFilenamePattern: log/main/current-%d.log.gz
+      logFormat: "[%date{dd/MMM/yyyy:HH:mm:ss +SSSS}] %c{15} [%thread] %-5level [%X{X-Transaction-Id} - %X{X-Request-Id}] - %msg%n%rEx"
+      archivedFileCount: 50
+
+template: "Hello Dropwizard..!!!"
