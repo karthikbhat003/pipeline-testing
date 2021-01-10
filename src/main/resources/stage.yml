@@ -12,16 +12,16 @@ server:
 logging:
   level: INFO
   loggers:
-    eragon-logger:
+    my-logger:
       level: INFO
       additive: false
       appenders:
         - type: file
           threshold: ALL
           timeZone: 'Asia/Jakarta'
-          logFormat: "%d [%thread] %-5level %c{15} - $eragon$%msg%n%rEx"
-          currentLogFilename: log/eragon/events.log
-          archivedLogFilenamePattern: log/eragon/events-%d-%i.log.gz
+          logFormat: "%d [%thread] %-5level %c{15} - $my$%msg%n%rEx"
+          currentLogFilename: log/app/events.log
+          archivedLogFilenamePattern: log/app/events-%d-%i.log.gz
           archivedFileCount: 10
   appenders:
     - type: console

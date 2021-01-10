@@ -21,7 +21,7 @@ public class MainApplication extends Application<TestConfiguration> {
         /**
          * This is required for reading yml from config.
          */
-//        bootstrap.setConfigurationSourceProvider(new ResourceConfigurationSourceProvider());
+        bootstrap.setConfigurationSourceProvider(new ResourceConfigurationSourceProvider());
         /**
          * This is required to read the environment variables
          */
