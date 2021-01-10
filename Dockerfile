@@ -4,7 +4,7 @@ EXPOSE 9910 9911
 
 RUN mkdir app
 
-COPY test-docker-k8s-1.0-SNAPSHOT.jar app
+COPY target/test-docker-k8s-1.0-SNAPSHOT.jar app
 COPY stage.yml app
 
 WORKDIR app
