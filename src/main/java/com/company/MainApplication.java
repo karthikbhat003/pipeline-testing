@@ -10,7 +10,7 @@ import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
 import lombok.extern.slf4j.Slf4j;
 
-// todo - Look at the logging configuration in yml to get better picture.
+// todo - Look at the logging configuration in yml to get better picture
 @Slf4j
 public class MainApplication extends Application<TestConfiguration> {
     public static void main(String[] args) throws Exception {
