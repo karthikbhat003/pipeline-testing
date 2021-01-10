@@ -9,7 +9,7 @@ COPY stage.yml app
 
 WORKDIR app
 
-RUN java -jar test-docker-k8s.jar server stage.yml
+RUN java -jar test-docker-k8s-1.0-SNAPSHOT.jar server stage.yml
 
 #ADD test-docker-k8s.jar test-docker-k8s.jar
 
