@@ -14,4 +14,4 @@ WORKDIR app
 
 #CMD ["java", "-jar", "test-docker-k8s.jar", "server", "stage.yml"]
 
-ENTRYPOINT ["java", "-jar", "test-docker-k8s.jar", "server", "stage.yml"]
+ENTRYPOINT ["java", "-jar", "test-docker-k8s-1.0-SNAPSHOT.jar", "server", "stage.yml"]
